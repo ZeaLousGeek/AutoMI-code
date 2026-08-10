@@ -1,0 +1,17 @@
+# 网络模型
+model:
+  name: 'EEGNet'
+  path: 'models'
+  type: '2d'
+  F1: 8
+  F2: 16
+  D: 2
+  kernel_length_1: 64
+  kernel_length_2: 16
+  dropout_rate: 0.25
+  last_dim: 400
+
+# 预训练
+preprocess:
+  augmentation: 1
+  filter_bank: [[ 0.5, 40 ]]

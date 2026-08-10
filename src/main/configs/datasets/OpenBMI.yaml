@@ -1,0 +1,19 @@
+# OpenBMI数据集描述文件
+dataset:
+  name: "OpenBMI"
+  type: ".mat"
+  path: "data/OpenBMI/mat"
+  subjects: 54
+  sessions: 2
+  session_mapping: {0: "T", 1: "E"}
+  # The channel configuration of the International 10-20 system (62 EEG and 4 EMG recording electrodes)
+  channels: 62
+  sampling_rate: 1000
+  # right and left hand imagery tasks
+  classes: 2
+
+preprocess:
+  time_window: [0.5, 3.5]
+  duration_s: 3
+  resample_rate: 250
+  time_point: 750

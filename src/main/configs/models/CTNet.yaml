@@ -1,0 +1,17 @@
+model:
+  name: 'CTNet'
+  path: 'models'
+  type: '2d'
+  emb_size: 40
+  depth: 6
+  heads: 4
+  eeg1_f1: 20
+  eeg1_kernel_size: 64
+  eeg1_D: 2
+  eeg1_pooling_size1: 8
+  eeg1_pooling_size2: 8
+  eeg1_dropout_rate: 0.3 
+preprocess:
+  augmentation: 1
+  filter_bank: [[ 0.5, 100]]
+

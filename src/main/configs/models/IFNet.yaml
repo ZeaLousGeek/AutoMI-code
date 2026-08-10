@@ -1,0 +1,13 @@
+# IFNet网络模型
+model:
+  name: 'IFNet'
+  path: 'models'
+  type: '1d'
+  out_channels: 64
+  radix: 2
+  kernel_size: 63
+  patch_size: 125
+  Lineat_input: 384
+preprocess:
+  augmentation: 5
+  filter_bank: [[ 4, 16], [16, 40]]

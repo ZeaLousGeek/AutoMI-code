@@ -1,0 +1,18 @@
+# bcicIv2a数据集配置
+dataset:
+  name: "bcicIV2a"
+  type: ".gdf"
+  path: "data/bcicIV2a/gdf"
+  subjects: 9
+  sessions: 2
+  session_mapping: {0: "T", 1: "E"}
+  channels: 22
+  classes: 4
+
+# 预训练
+preprocess:
+  time_window: [0.5, 3.5]
+  duration_s: 3
+  resample_rate: 250
+  time_point: 750
+

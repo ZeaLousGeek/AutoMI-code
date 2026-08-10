@@ -1,0 +1,27 @@
+disable_existing_loggers: false
+formatters:
+  simpleFormatter:
+    datefmt: '%Y-%m-%d %H:%M:%S'
+    format: '[{asctime}.{msecs:03.0f} - {name} - {levelname}] {message}'
+    style: '{'
+handlers:
+  consoleHandler:
+    class: logging.StreamHandler
+    formatter: simpleFormatter
+    level: DEBUG
+    stream: ext://sys.stdout
+  fileHandler:
+    class: logging.FileHandler
+    filename: sample.log
+    formatter: simpleFormatter
+    level: DEBUG
+loggers:
+  sampleLogger:
+    handlers:
+    - fileHandler
+    level: DEBUG
+    propagate: false
+root:
+  handlers: []
+  level: INFO
+version: 1

@@ -1,0 +1,4 @@
+# 训练
+train:
+  # 本模式为
+  mode: "Cl_FS"

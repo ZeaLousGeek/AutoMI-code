@@ -1,0 +1,13 @@
+# 网络模型
+model:
+  name: 'EEGConformer'
+  path: 'models'
+  type: '2d'
+  emb_size: 40
+  depth: 6
+  channel_size: 3
+  last_dim: 1760
+
+preprocess:
+  augmentation: 1
+  filter_bank: [[0.5, 40]]

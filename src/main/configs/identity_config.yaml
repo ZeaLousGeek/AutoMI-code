@@ -1,0 +1,21 @@
+train:
+  accelerate:
+    CuDNN_enabled: true
+    benchmark: true
+  device: cuda
+  save_weights: false
+  logs:
+    save_path: /logs
+  loss:
+    name: CrossEntropyLoss
+  max_epochs: 100
+  optimizer:
+    lr: 0.001
+    name: Adam
+  random:
+    flag: True
+    seed: 19960203
+  results:
+    final_epoch_nums: 100
+  test_batchsize: 256
+  training_batchsize: 64
